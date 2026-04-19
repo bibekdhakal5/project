@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <title> Bibek Dhakal - Personal Website </title>
+    <link rel="stylesheet" href="abc.css">
+</head>
+
+<body>
+    <header>
+        <h1> Bibek Dhakal</h1>
+        <p> Welcome to my Personal Website </p>
+    </header>
+<nav>
+        <a href="1about.html"> About Me </a>
+        <a href="2projects.html"> Projects </a>
+        <a href="3contact.html"> Contact </a>
+        <a href="4feedback.html"> Feedback </a>
+        <a href="services.html"> Services </a>
+    </nav>
+    <div class="container">
+        <section id="projects">
+            <div class="project-box">
+                <h2> Projects </h2>
+                <p> This website is my only project in HTML so far for this year. </p>
+            </div>
+            <div class="project-box">
+                <h3>Coming Soon</h3>
+                <p> I will be adding more projects to this section soon. Stay tuned! </p>
+            </div>
+            <hr>
+            <p> If you have any project ideas or recommendations, please fill the form below </p>
+            <form action="#" method="post">
+                <fieldset id = "form">
+                    <legend> Project Recommendation Form </legend>
+                    <label for="fname"> Enter your name: </label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your name."> <br><br>
+                    <label for = "email"> Enter your email: </label>
+                    <input type = "email" id = "email" name = "email" placeholder="Enter your email."> <br><br>
+                    <label for="recommend"> Do you have any project recommendation for me? </label> <br>
+                    <textarea id="recommend" name="recommend" rows="4" cols="30"
+                        placeholder="Enter your recommendation here."> </textarea> <br><br>
+                    <input type="submit" value="Submit" id = "btn">
+                    <input type="reset" value="Clear All" id = "btn">
+                </fieldset>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <address>
+            You can visit me at: <br>
+            Dahachok,Street 3<br>
+            Kathmandu , Nepal<br>
+            Phone: <a class="phone"  href="tel:+977-1234567890">+977-9768907007</a> <br>
+        </address>
+        <br>
+        &copy; 2026 Bibek Dhakal. All rights reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+
+}
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2f3940;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid #66c2ff;
+    margin: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: #66c2ff;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(102, 198, 255, 0.5);
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+section {
+    margin-bottom: 40px;
+}
+section h2 {
+    color: #2f3940;
+    border-bottom: 2px solid #2f3940;
+    padding-bottom: 10px;
+}
+
+img {
+    
+    max-width: 100%;
+    height: auto;
+    border-radius:50%;
+    border: #2f3940 solid 2px;
+}
+
+#special {
+    background-color: #582424;
+    padding: 20px;
+    border-radius: 10px;
+    border: #2f3940 solid 2px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+}
+
+#list {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    border: 2px solid #2f3940;
+    box-shadow: 0 8px 24px rgba(47, 57, 64, 0.12);
+    list-style: none;
+    counter-reset: speciality;
+}
+
+#list li {
+    position: relative;
+    counter-increment: speciality;
+    margin-bottom: 14px;
+    padding: 16px 18px 16px 60px;
+    background-color: #f7f8fa;
+    border-radius: 12px;
+    color: #2f3940;
+    font-weight: 600;
+}
+
+#list li:last-child {
+    margin-bottom: 0;
+}
+
+#list li::before {
+    content: counter(speciality);
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    background-color: #2f3940;
+    color: #ffffff;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+footer {
+    background-color: #2f3940;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+/*This is not working Make it letert*/
+.phone {
+    color: white;
+    text-decoration: none;
+}
+.phone:hover {
+    text-decoration: underline;
+    color:Green;
+}
+.project-box {
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #2a5298;
+    margin-bottom: 20px;
+}
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+    color: #2a5298;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin: 0 10px 0 0;
+    margin-bottom: 0;
+}
+
+/* BUTTONS */
+#btn {
+    background: #2a5298;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background: #1e3c72;
+}
+.services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .price-btn {
+            display: inline-block;
+            margin-top: 10px;
+            background: #00a86b;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .price-btn:hover {
+            background: #007f50;
+            transform: scale(1.05);
+        }
